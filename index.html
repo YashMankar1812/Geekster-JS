@@ -3,167 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunVilla - Interactive Project Showcase</title>
+    <title>FunVilla </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>FunVilla</h1>
-            <p class="tagline">Explore my collection of interactive web projects and games</p>
+
+    <header class="hero-header">
+        <nav class="navbar">
+          <div class="logo">Fun<span>Villa</span></div>
+      
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      
+        <div class="hero-content">
+          <h1>Welcome to <span>FunVilla</span></h1>
+          <h2 id="changing-text">Interactive Web Projects</h2>
+          <p>Play • Learn • Build • Enjoy</p>
+          <a href="#projects" class="hero-btn">Explore Projects</a>
         </div>
-    </header>
+      </header>
+    
+      
+      <section class="about-section" id="about">
+        <h2>About FunVilla</h2>
+        <p>
+          <strong>FunVilla</strong> is a creative playground built by 
+          <strong>Yash Mankar</strong>, where learning meets fun.
+          This platform showcases interactive JavaScript projects, mini-games,
+          UI experiments, and DOM-based applications designed to strengthen
+          frontend skills while keeping things enjoyable.
+        </p>
+      
+        <p>
+          Every project inside FunVilla focuses on clean UI, smooth interaction,
+          and real-world JavaScript logic — making it perfect for learners,
+          recruiters, and curious minds.
+        </p>
+      </section>
+      
 
-    <div class="container">
-        <div class="projects-section animate-fade">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card animate-fade delay-1">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80');"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Random Color Generator</h3>
-                        <p class="project-description">Generate beautiful random color palettes with hex codes and previews. Perfect for designers!</p>
-                        <a href="/DOM_Project/0_RandomColor_generator/" class="project-link">
-                            Explore <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card animate-fade delay-2">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1132&q=80');"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Shape & Color Changer</h3>
-                        <p class="project-description">Interactive playground to change shapes and colors with smooth animations.</p>
-                        <a href="/DOM_Project/01_Change_Shape_&_Color/" class="project-link">
-                            Play Now <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card animate-fade delay-3">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sticky Notes</h3>
-                        <p class="project-description">Digital sticky notes to organize your thoughts and ideas with colorful customization.</p>
-                        <a href="/DOM_Project/05_Sticky_Notes/" class="project-link">
-                            Get Organized <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="project-card animate-fade delay-1">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80');"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Basic Calculator</h3>
-                        <p class="project-description">A sleek calculator with all basic operations and memory functions.</p>
-                        <a href="/DOM_Project/23_Basic_Calculator/" class="project-link">
-                            Calculate <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="project-card animate-fade delay-2">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80');"></div>
-                    <div class="project-content">
-                        <h3 class="project-title">Interactive Quiz</h3>
-                        <p class="project-description">Test your knowledge with this fun, timed quiz on various topics.</p>
-                        <a href="/DOM_Project/5_Interactive_Quiz/" class="project-link">
-                            Take Quiz <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 6 -->
-    <!-- Project 6 - Tic Tac Toe -->
-<div class="project-card animate-fade delay-3">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');"></div>
-    <div class="project-content">
-        <h3 class="project-title">Tic Tac Toe</h3>
-        <p class="project-description">Classic X and O game with player vs computer mode and win animations.</p>
-        <a href="/DOM_Project/22_Tic-Tac-Toe Game/" class="project-link">
-            Play Game <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</div>
+      <!-- Fetured Projects  -->
 
-           <!-- Project 7 - LeaderBoard -->
-<div class="project-card animate-fade delay-1">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
-    <div class="project-content">
-        <h3 class="project-title">LeaderBoard</h3>
-        <p class="project-description">Dynamic ranking system to track top performers with real-time updates.</p>
-        <a href="/DOM_Project/06_Leaderboard/" class="project-link">
-            View Rankings <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</div>
-
-<!-- Project 8 - Feedback UI -->
-<div class="project-card animate-fade delay-2">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80');"></div>
-    <div class="project-content">
-        <h3 class="project-title">Feedback UI</h3>
-        <p class="project-description">Interactive feedback collection with rating system and comments.</p>
-        <a href="/DOM_Project/25_Feedback_UI/" class="project-link">
-            Give Feedback <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</div>
-
-<!-- Project 9 - Dad Joke Generator -->
-<div class="project-card animate-fade delay-3">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80');"></div>
-    <div class="project-content">
-        <h3 class="project-title">Dad Joke Generator</h3>
-        <p class="project-description">Endless supply of cringe-worthy dad jokes to make you groan and laugh!</p>
-        <a href="/DOM_Project/26_Dad_Joke_Generator/" class="project-link">
-            Get Jokes <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</div>
-
-<!-- Project 10 - Dark Mode Toggle -->
-<div class="project-card animate-fade delay-1">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
-    <div class="project-content">
-        <h3 class="project-title">Dark Mode Toggle</h3>
-        <p class="project-description">Sleek day/night mode switcher with automatic system preference detection.</p>
-        <a href="/DOM_Project/27_Dark_Mode_Toggle/" class="project-link">
-            Try It Out <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</div>
-
-
-<!-- Project 11 - Key Code Generator -->
-<div class="project-card animate-fade delay-2">
-    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'); background-position: center;"></div>
-    <div class="project-content">
-        <h3 class="project-title">Key Code Generator</h3>
-        <p class="project-description">Press any key to instantly see its JavaScript key code, code, and key name.</p>
-        <a href="/DOM_Project/28_Key_Code_Generator/" class="project-link">
-            Try It <i class="fas fa-keyboard"></i>
-        </a>
-    </div>
-</div>
-
-                
+    <section class="featured-projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+      
+        <div class="projects-grid-pro">
+      
+          <!-- Project Card -->
+          <div class="project-pro color-generator">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Random Color Generator</h3>
+              <p>Create beautiful color palettes instantly</p>
+              <!-- <a href="/DOM_Project/0_RandomColor_generator/">Explore</a> -->
             </div>
-            
-            <div class="slider-nav">
-                <div class="slider-dot active"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
+          </div>
+      
+          <div class="project-pro shape-changer">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Shape & Color Changer</h3>
+              <p>Play with shapes, colors & animations</p>
+              <!-- <a href="/DOM_Project/01_Change_Shape_&_Color/">Play</a> -->
             </div>
+          </div>
+      
+          <div class="project-pro sticky-notes">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Sticky Notes</h3>
+              <p>Organize ideas visually</p>
+              <!-- <a href="/DOM_Project/05_Sticky_Notes/">Open</a> -->
+            </div>
+          </div>
+      
+          <div class="project-pro calculator">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Basic Calculator</h3>
+              <p>Clean UI calculator with logic</p>
+              <!-- <a href="/DOM_Project/23_Basic_Calculator/">Calculate</a> -->
+            </div>
+          </div>
+      
+          <div class="project-pro quiz">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Interactive Quiz</h3>
+              <p>Timed quiz with score logic</p>
+              <!-- <a href="/DOM_Project/5_Interactive_Quiz/">Start</a> -->
+            </div>
+          </div>
+      
+          <div class="project-pro tictactoe">
+            <div class="project-overlay"></div>
+            <div class="project-info">
+              <h3>Tic Tac Toe</h3>
+              <p>Classic game with animations</p>
+              <!-- <a href="/DOM_Project/22_Tic-Tac-Toe Game/">Play</a> -->
+            </div>
+          </div>
+      
         </div>
-    </div>
+      </section>
+      
 
     <footer>
         <div class="footer-content">
@@ -181,8 +137,6 @@
         </div>
     </footer>
 
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

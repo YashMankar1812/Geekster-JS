@@ -71,3 +71,30 @@
                 observer.observe(card);
             });
         });
+
+
+
+        // Changing header text
+const texts = [
+    "Interactive Web Projects",
+    "JavaScript Games",
+    "Creative UI Experiments",
+    "Learn by Building"
+  ];
+  
+  let index = 0;
+  const textElement = document.getElementById("changing-text");
+  
+  setInterval(() => {
+    index = (index + 1) % texts.length;
+    textElement.textContent = texts[index];
+  }, 2500);
+  
+  // Hamburger menu
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+  
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+  
