@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunVilla </title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -27,7 +27,8 @@
             <span></span>
           </div>
         </nav>
-      
+        
+        <!-- Hero content  -->
         <div class="hero-content">
           <h1>Welcome to <span>FunVilla</span></h1>
           <h2 id="changing-text">Interactive Web Projects</h2>
@@ -36,7 +37,7 @@
         </div>
       </header>
     
-      
+      <!-- About  -->
       <section class="about-section" id="about">
         <h2>About FunVilla</h2>
         <p>
@@ -54,86 +55,235 @@
         </p>
       </section>
       
+      
 
-      <!-- Fetured Projects  -->
+      <!-- Featured Projects -->
 
-    <section class="featured-projects" id="projects">
-        <h2 class="section-title">Featured Projects</h2>
       
-        <div class="projects-grid-pro">
-      
-          <!-- Project Card -->
-          <div class="project-pro color-generator">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Random Color Generator</h3>
-              <p>Create beautiful color palettes instantly</p>
-              <!-- <a href="/DOM_Project/0_RandomColor_generator/">Explore</a> -->
-            </div>
-          </div>
-      
-          <div class="project-pro shape-changer">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Shape & Color Changer</h3>
-              <p>Play with shapes, colors & animations</p>
-              <!-- <a href="/DOM_Project/01_Change_Shape_&_Color/">Play</a> -->
-            </div>
-          </div>
-      
-          <div class="project-pro sticky-notes">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Sticky Notes</h3>
-              <p>Organize ideas visually</p>
-              <!-- <a href="/DOM_Project/05_Sticky_Notes/">Open</a> -->
-            </div>
-          </div>
-      
-          <div class="project-pro calculator">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Basic Calculator</h3>
-              <p>Clean UI calculator with logic</p>
-              <!-- <a href="/DOM_Project/23_Basic_Calculator/">Calculate</a> -->
-            </div>
-          </div>
-      
-          <div class="project-pro quiz">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Interactive Quiz</h3>
-              <p>Timed quiz with score logic</p>
-              <!-- <a href="/DOM_Project/5_Interactive_Quiz/">Start</a> -->
-            </div>
-          </div>
-      
-          <div class="project-pro tictactoe">
-            <div class="project-overlay"></div>
-            <div class="project-info">
-              <h3>Tic Tac Toe</h3>
-              <p>Classic game with animations</p>
-              <!-- <a href="/DOM_Project/22_Tic-Tac-Toe Game/">Play</a> -->
-            </div>
-          </div>
-      
-        </div>
+      <section class="featured-projects" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="projects-grid-pro">
+
+    <!-- Random Color Generator -->
+    <div class="project-pro color-generator"
+      style="background-image:url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Random Color Generator</h3>
+        <p>Create beautiful color palettes instantly</p>
+        <a href="DOM_Project/0_RandomColor_generator/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Emoji App -->
+    <div class="project-pro"
+      style="background-image:url('https://images.unsplash.com/photo-1587483166702-bf9aa66bd791?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1vaml8ZW58MHx8MHx8fDA%3D');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Emoji</h3>
+        <p>Search and explore emojis easily</p>
+        <a href="DOM_Project/07_Emoji/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Card Project -->
+    <div class="project-pro"
+      style="background-image:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Card Project</h3>
+        <p>Profile card generator</p>
+        <a href="DOM_Project/16_Card_Project/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Dark Mode -->
+    <div class="project-pro darkmode"
+      style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Dark Mode</h3>
+        <p>Theme toggle functionality</p>
+        <a href="DOM_Project/02_Dark_Mode/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Pokemon -->
+    <div class="project-pro PokeMon"
+    style="background-image:url('https://images.unsplash.com/photo-1613771404721-1f92d799e49f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9rZW1vbnxlbnwwfHwwfHx8MA%3D%3D');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>PokeMon</h3>
+        <p>Pokemon API filter app</p>
+        <a href="DOM_Project/15_Geekmon/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Shape & Color Changer -->
+    <div class="project-pro shape-changer"
+      style="background-image:url('https://images.unsplash.com/photo-1557672172-298e090bd0f1');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Shape & Color Changer</h3>
+        <p>Play with shapes and animations</p>
+        <a href="DOM_Project/01_Change_Shape_&_Color/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Sticky Notes -->
+    <div class="project-pro sticky-notes"
+      style="background-image:url('https://images.unsplash.com/photo-1620325867502-221cfb5faa5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RpY2t5JTIwbm90ZXN8ZW58MHx8MHx8fDA%3D');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Sticky Notes</h3>
+        <p>Organize ideas visually</p>
+        <a href="DOM_Project/05_Sticky_Notes/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Calculator -->
+    <div class="project-pro calculator"
+    style="background-image:url('https://plus.unsplash.com/premium_photo-1715107535123-d09cea74d9fe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjBjYWxjdWxhdG9yfGVufDB8fDB8fHww');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Basic Calculator</h3>
+        <p>Clean UI calculator logic</p>
+        <a href="DOM_Project/23_Basic_Calculator/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Interactive Quiz -->
+    <div class="project-pro quiz"
+      style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Interactive Quiz</h3>
+        <p>Timed quiz with scoring</p>
+        <a href="DOM_Project/5_Interactive_Quiz/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Tic Tac Toe -->
+    <div class="project-pro tictactoe"
+    style="background-image:url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=800&q=80');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Tic Tac Toe</h3>
+        <p>Classic game UI</p>
+        <a href="DOM_Project/22_Tic-Tac-Toe_Game/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- To-Do List -->
+    <div class="project-pro todolist"
+      style="background-image:url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>To-Do List App</h3>
+        <p>Task management made easy</p>
+        <a href="DOM_Project/24_To-Do List App/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Burger King -->
+    <div class="project-pro burger"
+      style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>Burger King</h3>
+        <p>Fast-food restaurant UI</p>
+        <a href="DOM_Project/12_Burger_king/">Live Demo</a>
+      </div>
+    </div>
+  
+    <!-- Leaderboard -->
+    <div class="project-pro leaderboard"
+      style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');">
+      <div class="project-overlay"></div>
+      <div class="project-info">
+        <h3>LeaderBoard</h3>
+        <p>Track top performers in real time</p>
+        <a href="DOM_Project/06_Leaderboard/">Live Demo</a>
+      </div>
+    </div>
+  
+  </div>
+  
       </section>
-      
+
+    
+
+<!-- Contact  -->
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <h2>Contact FunVilla</h2>
+      <p>
+        Have a question, feedback, or collaboration idea?
+        FunVilla is always open to meaningful conversations.
+      </p>
+
+      <ul>
+        <li><strong>Creator:</strong> Yash Mankar</li>
+        <li><strong>Email:</strong> yashmankar@example.com</li>
+        <li><strong>Location:</strong> India</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <h3>Send a Message</h3>
+
+      <div class="form-group">
+        <input type="text" id="name" required placeholder=" " />
+        <label>Full Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" required placeholder=" " />
+        <label>Email Address</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="subject" required placeholder=" " />
+        <label>Subject</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" rows="4" required placeholder=" "></textarea>
+        <label>Message</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p class="success-msg" id="successMsg"></p>
+    </form>
+
+  </div>
+</section>
+
+
+
+  <!-- Footer  -->
 
     <footer>
         <div class="footer-content">
             <div class="footer-logo">Fun<span>Villa</span></div>
             
             <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/YashMankar1812" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            
+              <a href="https://www.linkedin.com/in/yash-mankar-50625825b/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
             
+            
             <div class="copyright">© 2025 FunVilla. All rights reserved.</div>
-            <div class="designer">Designed with ❤️ by Yash Manakar</div>
+            <div class="designer">Designed with ❤️ by Yash Mankar</div>
         </div>
     </footer>
 
