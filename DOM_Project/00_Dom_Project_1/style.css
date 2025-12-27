@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: block;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.des{
+    color: white;
+}
+
+.container{
+     color: black;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 1px solid  black;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    /* font-size: 18px; */
+    /* font-weight: bold; */
+    /* height: 200px; */
+    /* width: 300px;  */
+}

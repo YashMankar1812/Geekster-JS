@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0375ad;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+canvas {
+    width: 100%;
+    height: 1000px;
+    border-radius: 10px;
+
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;   
+}
+h1{
+
+    font-size: 48px;
+    background-color:#f9f8fa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-clip 0.5s;
+    
+}
+.myChart{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    color: rgba(185, 68, 42, 0.2);
+    color: #1c094e;
+}
+.container{
+    width: 800px;
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid black;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    text-align: center;
+
+}
+
+
+
+

@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    /* background-color: #b23030; */
+    /* background-color: linear-gradient(to left #b23030 50%, #e0b0b0 50%); */
+    background: linear-gradient(149deg, #c34760, #eb9dbc, #fd77ae, #ee144a);
+    height: 100vh;
+    display: flex;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 48px;
+    /* background: linear-gradient(5deg, #18375d, #478099, #a7d3e7, #1d5996); */
+    background: linear-gradient(15deg,#174378, #87a2ad,#97d2ed, #668bb1  );
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-clip 0.5s;
+}
+.main{
+width: 50vw;
+border: 10px solid white;
+height: 80vh;
+color: white;
+border-radius: 10px;
+background-color:rgb(28, 30, 31)
+}
+.container {
+width: 80%;
+margin: 40px auto;
+/* background-color: #340e0e; */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+background-color: #4CAF50;
+background: linear-gradient(145deg, #046543, #136529, #0e4a3d, #0e7f10);
+color:white;
+text-transform: uppercase;
+padding: 10px 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border: none;
+height: 10vh;
+border: 3px solid whitesmoke;
+margin-top: 30px;
+border-radius: 35px;
+cursor: pointer;
+font-size: 26px;
+font-weight: 500;
+transition: all 0.3s ease ;
+}
+
+.button:hover {
+background: linear-gradient(145deg, #2e6a55, #32613f, #4e8176, #4a814b);
+color: black;
+transform: scale(1.1);
+
+}
+
+.joke {
+font-size: 24px;
+font-weight: bold;
+margin-top: 20px;
+padding: 10px;
+opacity: 0;
+transition: opacity 0.1s;
+}
+
+.joke.show {
+opacity: 1;
+animation: fadeOut 1s ease;
+}
+
+@keyframes fadeOut {
+0% {
+opacity: 0;
+transform: translateY(10px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+
+.emoji {
+font-size: 100px;
+transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+.hidden{
+    display: none;
+}
+#message{
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 1;
+    color: white;
+    transition: opacity 0.1s;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+

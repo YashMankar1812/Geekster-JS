@@ -1,0 +1,166 @@
+
+body {
+    margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center; 
+    transition: background 0.5s ease-in-out;
+    background:linear-gradient(124deg , rgb(165, 75, 116), rgb(145, 59, 159),rgb(124, 95, 228), rgb(239, 139, 139));
+    color: aliceblue;
+  }
+  h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(148, 6, 6);
+    font-family:sans-serif ;
+  }
+  
+ 
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  transition: background 0.5s ease-in-out;
+  color: aliceblue;
+  border-radius: 10px;
+  max-width: 400px;
+
+}
+
+.clock div {
+  margin: 15px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background: rgb(63, 3, 127);
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+  background: rgb(109, 46, 109);
+  opacity: 1;
+}
+
+.clock #ampm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background: rgb(9, 230, 145);
+}
+
+
+/* Example styles for the themes */
+body.digital-theme {
+  /* background-color: #f0f0f0; */
+  background-image: url("assets/1920x1080px\ _\ free\ download\ _\ HD\ wallpaper_\ blue\ tunnel\ digital\ wallpaper\,\ abstract\,\ Digital\ Blasphemy\,\ pattern.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  transition: background-color 0.5s ease-in-out;
+
+}
+
+body.analog-theme {
+  background-image: url("assets/240_F_728422546_a6f2ARjvXj7CFGJLkqv6lgqKUBHa7DZb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Times New Roman', serif;
+}
+
+body.retro-theme {
+  background-image: url("assets/1000_F_635218238_2DYau1XB7c5OpHrcKXBs4TMkpKUsoN77.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Courier New', monospace;
+}
+
+.div_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+#theme-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+}
+
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #0ec698;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-sizing: border-box; 
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+#message {
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+.fact {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(226, 228, 228);
+  margin-top: 10px;
+  text-align: center;
+}

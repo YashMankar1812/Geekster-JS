@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King - Order Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/bking.png">
+    <!-- Additional favicon formats for better browser compatibility -->
+    <link rel="shortcut icon" href="assets/bking.png">
+    <link rel="apple-touch-icon" href="assets/bking.png">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/bking.png" alt="Burger King Logo" class="logo">
+                <h1>Burger King <span>®</span></h1>
+            </div>
+            <div id="order-id" class="order-badge">
+                <i class="fas fa-receipt"></i>
+                <span class="order-number">Order #</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-banner">
+            <div class="hero-text">
+                <h2>HAVE IT YOUR WAY</h2>
+                <p>Build your perfect meal</p>
+            </div>
+        </div>
+
+        <section class="menu-section">
+            <h2 class="section-title"><span>Our Menu</span></h2>
+
+            <div id="food-selection" class="menu-grid">
+                <div class="menu-category burger">
+                    <div class="category-header">
+                        <i class="fas fa-hamburger"></i>
+                        <h3>Burgers</h3>
+                        <span class="price-range">(₹70 each)</span>
+                    </div>
+                    <div class="menu-items">
+                        <label class="menu-item">
+                            <input type="checkbox" value="doublecheburger" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Double Cheese</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="impsble" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Whopper</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="Burger" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Burger</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="whoper" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Whopper Jr.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="menu-category drink">
+                    <div class="category-header">
+                        <i class="fas fa-glass-whiskey"></i>
+                        <h3>Drinks</h3>
+                        <span class="price-range">(₹50 each)</span>
+                    </div>
+                    <div class="menu-items">
+                        <label class="menu-item">
+                            <input type="checkbox" value="frozen" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Lemonade</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="soft" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Soft Drink</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="icetea" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Ice Tea</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="coffee" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Coffee</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="menu-category sides">
+                    <div class="category-header">
+                        <i class="fas fa-french-fries"></i>
+                        <h3>Sides</h3>
+                        <span class="price-range">(₹100 each)</span>
+                    </div>
+                    <div class="menu-items">
+                        <label class="menu-item">
+                            <input type="checkbox" value="mzstick" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Mozzarella Sticks</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="Fries" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">French Fries</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="oring" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Onion Rings</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="hsbrow" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Hash Browns</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="menu-category dessert">
+                    <div class="category-header">
+                        <i class="fas fa-ice-cream"></i>
+                        <h3>Desserts</h3>
+                        <span class="price-range">(₹80 each)</span>
+                    </div>
+                    <div class="menu-items">
+                        <label class="menu-item">
+                            <input type="checkbox" value="hp" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Hershey's Pie</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="softscurve" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Soft Cone</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="sundae" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Sundae</span>
+                        </label>
+                        <label class="menu-item">
+                            <input type="checkbox" value="chltecc" />
+                            <span class="checkmark"></span>
+                            <span class="item-name">Chocolate Cookies</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-actions">
+                <button id="order-button" class="king-button">
+                    <i class="fas fa-crown"></i> Place Order
+                </button>
+            </div>
+
+            <div id="order-result" class="order-status">
+                <div class="status-content">
+                    <!-- Content will be added dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/bking.png" alt="Burger King Logo">
+                <span>Burger King</span>
+            </div>
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Locations</a>
+                <a href="#"><i class="fas fa-phone"></i> Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>© 2024 Burger King. All rights reserved. Designed by Yash Mankar</span>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

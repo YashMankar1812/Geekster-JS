@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calci | Unified Mentor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+   <body>
+      <div class="calc">
+        <form name="calculator">
+          <input type="textfield" name="ans" value="">
+          <br>
+          <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+          <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+          <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+          <input type="button" value="+" onClick="document.calculator.ans.value+='+'" class="plus">
+          <br>
+          <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+          <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+          <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+          <input type="button" value="-" onClick="document.calculator.ans.value+='-'" class="minus">
+          <br> 
+          <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+          <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+          <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+          <input type="button" value="*" onClick="document.calculator.ans.value+='*'" class="multi">
+          <br>
+          <input id="clear" type="reset" value="A/C">
+          <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+          <input type="button" value="/" onClick="document.calculator.ans.value+='/'" class="divi">
+          <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="equals"> 
+        </form>
+      </div>
+      <script src="script.js"></script>
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="appendOperator('*')">×</button>
+      <button onclick="appendOperator('-')">−</button>
+      
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button rowspan="2" onclick="calculate()" id="equals">=</button>
+
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendNumber('.')">.</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+ -->
+
+
+
+

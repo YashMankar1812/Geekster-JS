@@ -1,0 +1,117 @@
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #064041;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+
+        
+
+        section {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgb(240, 228, 228);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        /* Section 1: Form Styles */
+        .section1 {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section1 h1 {
+            /* margin-bottom: 20px; */
+            font-size: 50px;
+            color: #333;
+            text-align: center;
+        }
+
+        .section1 form {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr) 40px;
+            gap: 10px;
+        }
+
+        .section1 input {
+            padding: 10px;
+    border-radius: 4px;
+    border: 5px solid #8e8a8a;
+    font-size: 13px;
+    width: 75%;
+        }
+
+        .section1 button {
+            grid-column: span 2;
+            padding: 10px;
+            background-color: #0f8535;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .section1 button:hover {
+            background-color: #27b153;
+        }
+
+        /* Section 2: Player Data Display */
+        .player-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+        }
+        
+        .delete-btn {
+            background: #e74c3c;
+        }
+        
+        .add-points-btn {
+            background: #27ae60;
+        }
+        
+        .remove-points-btn {
+            background: #3498db;
+        }
+        
+        .action-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        /* For mobile view */
+        @media (max-width: 768px) {
+            .player-actions {
+                justify-content: flex-end;
+            }
+            
+            .action-btn {
+                width: 32px;
+                height: 32px;
+                padding: 6px;
+            }
+        }
