@@ -98,3 +98,12 @@ const texts = [
     navLinks.classList.toggle("active");
   });
   
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+  
+    document.getElementById("successMsg").textContent =
+      "Thank you! Your message has been sent 🚀";
+  
+    this.reset();
+  });
+  
