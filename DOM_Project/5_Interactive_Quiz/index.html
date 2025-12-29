@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-graduation-cap"></i> Quiz App</h1>
+  <nav>
+    <a onclick="showSection('quiz')">Quiz</a>
+    <!-- <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('contact')">Contact</a> -->
+  </nav>
+</header>
+
+<main>
+  <!-- QUIZ -->
+  <div class="quiz-card" id="quiz">
+    <div class="quiz-header"><h2 id="question">Choose a language to start</h2></div>
+    <div class="options hidden" id="options">
+      <div class="option"><input type="radio" name="answer" id="a"><label for="a" id="a_text"></label></div>
+      <div class="option"><input type="radio" name="answer" id="b"><label for="b" id="b_text"></label></div>
+      <div class="option"><input type="radio" name="answer" id="c"><label for="c" id="c_text"></label></div>
+      <div class="option"><input type="radio" name="answer" id="d"><label for="d" id="d_text"></label></div>
+    </div>
+    <button id="submit" class="hidden">Next</button>
+
+    <!-- LANGUAGE SELECT -->
+    <div class="center" id="langSelect">
+      <h3>Select Quiz Language</h3>
+      <div class="lang-grid">
+        <button class="lang-btn" onclick="startQuiz('html')">HTML</button>
+        <button class="lang-btn" onclick="startQuiz('css')">CSS</button>
+        <button class="lang-btn" onclick="startQuiz('js')">JavaScript</button>
+        <button class="lang-btn" onclick="startQuiz('sql')">SQL</button>
+        <button class="lang-btn" onclick="startQuiz('python')">Python</button>
+        <button class="lang-btn" onclick="startQuiz('java')">Java</button>
+      </div>
+    </div>
+
+    <!-- RESULT -->
+    <div class="center hidden" id="result"></div>
+  </div>
+
+</main>
+
+<footer>© 2024 Yash Mankar · Professional Quiz Platform</footer>
+
+<script>
+const quizzes = {
+  html: [
+    { q: "HTML stands for?", a: "Hyper Text Markup Language", b: "High Text Machine Language", c: "Hyperlinks Text Mark Language", d: "None", cAns: "a" },
+    { q: "Which tag is used to create a hyperlink?", a: "<link>", b: "<a>", c: "<href>", d: "<hyper>", cAns: "b" },
+    { q: "Which HTML tag is used for images?", a: "<image>", b: "<img>", c: "<pic>", d: "<src>", cAns: "b" },
+    { q: "Which attribute specifies an image source?", a: "link", b: "href", c: "src", d: "alt", cAns: "c" },
+    { q: "HTML is a ___ language.", a: "Programming", b: "Scripting", c: "Markup", d: "Query", cAns: "c" },
+    { q: "Which tag is used for line break?", a: "<br>", b: "<lb>", c: "<break>", d: "<line>", cAns: "a" },
+    { q: "Which tag is used for largest heading?", a: "<h6>", b: "<head>", c: "<h1>", d: "<heading>", cAns: "c" },
+    { q: "Which tag creates an unordered list?", a: "<ol>", b: "<ul>", c: "<li>", d: "<list>", cAns: "b" },
+    { q: "Which attribute provides extra info about element?", a: "class", b: "style", c: "title", d: "id", cAns: "c" },
+    { q: "Which tag is semantic?", a: "<div>", b: "<span>", c: "<section>", d: "<b>", cAns: "c" }
+  ],
+
+  css: [
+    { q: "CSS stands for?", a: "Color Style Sheets", b: "Creative Style Sheets", c: "Cascading Style Sheets", d: "Computer Style Sheets", cAns: "c" },
+    { q: "Which property changes text color?", a: "font-color", b: "text-color", c: "color", d: "fgcolor", cAns: "c" },
+    { q: "Which symbol is used for class selector?", a: "#", b: ".", c: "*", d: "&", cAns: "b" },
+    { q: "Which symbol is used for id selector?", a: ".", b: "#", c: "*", d: "@", cAns: "b" },
+    { q: "Which property sets background color?", a: "bgcolor", b: "background", c: "background-color", d: "color-bg", cAns: "c" },
+    { q: "Which display value hides element?", a: "block", b: "none", c: "hidden", d: "invisible", cAns: "b" },
+    { q: "Which unit is relative?", a: "px", b: "cm", c: "em", d: "mm", cAns: "c" },
+    { q: "Which property controls text size?", a: "text-size", b: "font-size", c: "size", d: "font-style", cAns: "b" },
+    { q: "Flexbox axis default direction?", a: "column", b: "row", c: "grid", d: "inline", cAns: "b" },
+    { q: "Which makes rounded corners?", a: "corner-radius", b: "border-round", c: "border-radius", d: "radius", cAns: "c" }
+  ],
+
+  js: [
+    { q: "Which runs in browser?", a: "Java", b: "Python", c: "JavaScript", d: "C", cAns: "c" },
+    { q: "Which keyword declares variable?", a: "var", b: "int", c: "string", d: "num", cAns: "a" },
+    { q: "Which is NOT JS data type?", a: "Number", b: "Boolean", c: "Float", d: "Undefined", cAns: "c" },
+    { q: "Which symbol is used for strict equality?", a: "==", b: "=", c: "===", d: "!=", cAns: "c" },
+    { q: "Which method prints to console?", a: "log()", b: "print()", c: "console.log()", d: "echo()", cAns: "c" },
+    { q: "Array index starts from?", a: "0", b: "1", c: "-1", d: "any", cAns: "a" },
+    { q: "Which keyword defines constant?", a: "let", b: "var", c: "const", d: "static", cAns: "c" },
+    { q: "Which function converts string to int?", a: "Number()", b: "parseInt()", c: "int()", d: "toInt()", cAns: "b" },
+    { q: "Which is a loop?", a: "if", b: "for", c: "else", d: "switch", cAns: "b" },
+    { q: "JS is ___ typed language.", a: "Strongly", b: "Statically", c: "Dynamically", d: "Strict", cAns: "c" }
+  ],
+
+  sql: [
+    { q: "SQL stands for?", a: "Structured Query Language", b: "Simple Query Language", c: "Stylish Query Language", d: "None", cAns: "a" },
+    { q: "Which command retrieves data?", a: "GET", b: "FETCH", c: "SELECT", d: "READ", cAns: "c" },
+    { q: "Which clause filters records?", a: "WHERE", b: "FROM", c: "ORDER", d: "GROUP", cAns: "a" },
+    { q: "Which keyword sorts data?", a: "SORT", b: "ORDER BY", c: "GROUP BY", d: "FILTER", cAns: "b" },
+    { q: "Which joins tables?", a: "MERGE", b: "JOIN", c: "CONNECT", d: "UNION", cAns: "b" },
+    { q: "Primary key is?", a: "Duplicate", b: "Null", c: "Unique", d: "Optional", cAns: "c" },
+    { q: "Which removes table?", a: "DELETE", b: "DROP", c: "REMOVE", d: "CLEAR", cAns: "b" },
+    { q: "Which counts rows?", a: "SUM()", b: "COUNT()", c: "TOTAL()", d: "ROWS()", cAns: "b" },
+    { q: "Which updates data?", a: "MODIFY", b: "CHANGE", c: "UPDATE", d: "SET", cAns: "c" },
+    { q: "Which DB is SQL-based?", a: "MongoDB", b: "Firebase", c: "MySQL", d: "Redis", cAns: "c" }
+  ],
+
+  python: [
+    { q: "Python is ___ language.", a: "Compiled", b: "Interpreted", c: "Markup", d: "Query", cAns: "b" },
+    { q: "Which prints output?", a: "echo", b: "print()", c: "console()", d: "log()", cAns: "b" },
+    { q: "List uses which brackets?", a: "{}", b: "()", c: "[]", d: "<>", cAns: "c" },
+    { q: "Which is immutable?", a: "List", b: "Set", c: "Tuple", d: "Dict", cAns: "c" },
+    { q: "Which keyword defines function?", a: "func", b: "define", c: "def", d: "function", cAns: "c" },
+    { q: "Python file extension?", a: ".java", b: ".py", c: ".js", d: ".html", cAns: "b" },
+    { q: "Which loop exists in Python?", a: "for", b: "foreach", c: "repeat", d: "loop", cAns: "a" },
+    { q: "Which converts to integer?", a: "int()", b: "str()", c: "float()", d: "bool()", cAns: "a" },
+    { q: "Which handles exception?", a: "catch", b: "error", c: "try-except", d: "throw", cAns: "c" },
+    { q: "Python creator?", a: "James Gosling", b: "Guido van Rossum", c: "Dennis Ritchie", d: "Brendan Eich", cAns: "b" }
+  ],
+
+  java: [
+    { q: "Java is ___ language.", a: "Platform dependent", b: "Platform independent", c: "Scripting", d: "Markup", cAns: "b" },
+    { q: "Java file extension?", a: ".js", b: ".py", c: ".java", d: ".class", cAns: "c" },
+    { q: "Which keyword creates object?", a: "class", b: "new", c: "this", d: "object", cAns: "b" },
+    { q: "Which is NOT primitive?", a: "int", b: "float", c: "String", d: "char", cAns: "c" },
+    { q: "Main method syntax?", a: "main()", b: "public static void main()", c: "start()", d: "run()", cAns: "b" },
+    { q: "Which supports OOP?", a: "C", b: "Java", c: "HTML", d: "SQL", cAns: "b" },
+    { q: "JVM stands for?", a: "Java Variable Machine", b: "Java Virtual Machine", c: "Java Verified Machine", d: "None", cAns: "b" },
+    { q: "Which handles inheritance?", a: "extends", b: "implements", c: "inherits", d: "super", cAns: "a" },
+    { q: "Which access modifier is most restrictive?", a: "public", b: "protected", c: "default", d: "private", cAns: "d" },
+    { q: "Which is Java collection?", a: "ArrayList", b: "MapReduce", c: "DataSet", d: "StreamIO", cAns: "a" }
+  ]
+};
+
+
+let currentQuiz=[],index=0,score=0;
+const qEl=document.getElementById('question');
+const opts=document.getElementById('options');
+const submit=document.getElementById('submit');
+const result=document.getElementById('result');
+
+function showSection(id){document.querySelectorAll('.quiz-card').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden')}
+
+function startQuiz(lang){currentQuiz=quizzes[lang];index=0;score=0;document.getElementById('langSelect').classList.add('hidden');opts.classList.remove('hidden');submit.classList.remove('hidden');loadQ()}
+
+function loadQ(){const q=currentQuiz[index];qEl.innerText=q.q;['a','b','c','d'].forEach(x=>document.getElementById(x+'_text').innerText=q[x]);document.querySelectorAll('input').forEach(i=>i.checked=false)}
+
+submit.onclick=()=>{let ans=[...document.querySelectorAll('input')].find(i=>i.checked)?.id;if(!ans)return;if(ans===currentQuiz[index].cAns)score++;index++;index<currentQuiz.length?loadQ():showResult()}
+
+function showResult(){opts.classList.add('hidden');submit.classList.add('hidden');result.classList.remove('hidden');result.innerHTML=`<div class='score'>You scored ${score}/${currentQuiz.length}</div><p style='margin:1rem 0'>Thanks for playing! 🎉</p><button onclick='location.reload()'>Return to Quiz</button>`}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
